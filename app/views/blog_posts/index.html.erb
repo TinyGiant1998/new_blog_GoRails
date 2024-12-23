@@ -12,11 +12,11 @@
 </div>
 <% end %>
 
-
+<% if @pagy.count > @pagy.limit %>
  <div class="my-16 flex justify-center">
   <%== pagy_nav(@pagy) %>
 </div>
-
+<% end %>
 
 
 
